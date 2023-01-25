@@ -125,7 +125,7 @@
     </section>
 
     <!-- Sambutan Rektor -->
-    <section class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 h-[50rem]">
+    <section class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 h-[43rem]">
       <div class="grid gap-4 grid-cols-2 p-24">
         <!-- Left Content -->
         <div class="1">
@@ -159,7 +159,7 @@
         </div>
 
         <!-- Right Content -->
-        <div class="flex justify-center relative -mt-24 h-[50rem]">
+        <div class="flex justify-center relative -mt-24 h-[42rem]">
           <div class="absolute bottom-[8rem]">
             <span
               class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-indigo-600 text-white px-5 py-2 text-2xl font-bold"
@@ -169,6 +169,81 @@
           </div>
           <img src="../assets/img/rektor-unw-yellow.png" alt="Rektor UNW" />
         </div>
+      </div>
+    </section>
+
+    <!-- Berita Terbaru -->
+    <section class="container mx-auto py-16">
+      <!-- Title Section -->
+      <TitleSection title="BERITA TERBARU" />
+      <!-- Content Section -->
+      <div class="flex justify-center items-center gap-10 p-5">
+        <!-- Card 1 -->
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="https://flowbite.com/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+          </div>
+        </div>
+        <!-- End Card 1 -->
+        <!-- Card 1 -->
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="https://flowbite.com/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+          </div>
+        </div>
+        <!-- End Card 1 -->
+        <!-- Card 1 -->
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="https://flowbite.com/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+          </div>
+        </div>
+        <!-- End Card 1 -->
       </div>
     </section>
   </div>
