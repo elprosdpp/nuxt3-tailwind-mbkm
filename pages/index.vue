@@ -26,7 +26,7 @@
       </div>
 
       <!-- Content Jumbotron -->
-      <div class="container mx-auto max-w-xl relative z-20">
+      <div class="container mx-auto relative z-20 lg:max-w-xl">
         <div
           class="flex flex-col gap-4 items-center pt-[9rem] lg:justify-center lg:pt-[9rem]"
         >
@@ -40,7 +40,7 @@
         </div>
         <div class="flex justify-center p-7">
           <h1
-            class="text-white font-bold text-[2.8em] text-center leading-[55px] lg:text-[3.35rem]"
+            class="text-white font-bold text-[2.5em] text-center leading-[55px] lg:text-[3.35rem]"
           >
             MERDEKA BELAJAR
             <span
@@ -51,9 +51,8 @@
         </div>
 
         <div class="py-3">
-          <p class="text-gray-400 text-center">
-            Website Resmi Merdeka Belajar Kampus Merdeka <br />
-            Universitas Ngudi Waluyo
+          <p class="text-gray-400 text-center mx-5">
+            Website Resmi Merdeka Belajar Kampus Merdeka Universitas Ngudi Waluyo
           </p>
 
           <div class="flex justify-center items-center py-8">
@@ -121,7 +120,9 @@
 
     <!-- Sambutan Rektor -->
     <section class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 lg:h-[43rem]">
-      <div class="grid gap-4 grid-cols-2 p-5 lg:p-24">
+      <div
+        class="flex flex-col-reverse justify-between p-5 gap-4 lg:p-24 lg:grid grid-cols-2"
+      >
         <!-- Left Content -->
         <div class="1">
           <div class="border-b-8 border-indigo-500 w-32 mb-5"></div>
@@ -133,7 +134,7 @@
             >
           </h1>
 
-          <p class="text-white my-8 text-justify text-xs lg:text-lg">
+          <p class="text-white my-8 text-justify text-sm lg:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quisquam
             quaerat obcaecati praesentium? Vel ipsum debitis deleniti in consectetur quis
             commodi reiciendis totam amet nostrum facilis id odit quia placeat,
@@ -142,7 +143,7 @@
 
           <button
             type="button"
-            class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 inline-flex items-center"
+            class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-8 inline-flex items-center lg:mb-2"
           >
             <svg
               class="w-4 h-4 mr-2"
@@ -164,17 +165,19 @@
         </div>
 
         <!-- Right Content -->
-        <div
-          class="flex flex-col justify-center relative h-[19rem] lg:h-[42rem] lg:-mt-24"
-        >
-          <div class="absolute -bottom-3 lg:bottom-[8rem]">
+        <div class="flex justify-center relative lg:h-[42rem] lg:-mt-24">
+          <div class="absolute bottom-20 lg:bottom-[5rem]">
             <span
               class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-indigo-600 text-white px-5 py-2 text-xs font-bold lg:text-2xl"
             >
               Prof. Dr. Subyantoro, M.Hum.
             </span>
           </div>
-          <img src="../assets/img/rektor-unw-yellow.png" alt="Rektor UNW" />
+          <img
+            class="max-w-xs lg:max-w-md"
+            src="../assets/img/rektor-unw-yellow.png"
+            alt="Rektor UNW"
+          />
         </div>
       </div>
     </section>
