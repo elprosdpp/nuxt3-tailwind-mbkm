@@ -164,7 +164,9 @@
         </div>
 
         <!-- Right Content -->
-        <div class="flex justify-center relative h-[20rem] lg:h-[42rem] lg:-mt-24">
+        <div
+          class="flex flex-col justify-center relative h-[19rem] lg:h-[42rem] lg:-mt-24"
+        >
           <div class="absolute -bottom-3 lg:bottom-[8rem]">
             <span
               class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-indigo-600 text-white px-5 py-2 text-xs font-bold lg:text-2xl"
