@@ -1,7 +1,9 @@
 <template>
-  <div class="relative">
+  <div class="absolute">
     <!-- Carousel wrapper -->
-    <div class="relative overflow-hidden rounded-lg h-[37rem] object-cover">
+    <div
+      class="relative overflow-hidden rounded-lg h-[32.2rem] object-cover rounded-bl-[8rem]"
+    >
       <!-- Item Carousel -->
       <div
         class="carousel-item relative w-full transform transition-all duration-500 ease-in-out"
@@ -14,11 +16,11 @@
         <div
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
         >
-          <h1 class="text-sm text-white lg:text-5xl font-bold">{{ img.content }}</h1>
+          <!-- <h1 class="text-sm text-white lg:text-5xl font-bold">{{ img.content }}</h1> -->
         </div>
 
         <!-- Image Slider Carousel -->
-        <img :src="img.img" :alt="`slide-${i}`" class="object-cover w-full" />
+        <img :src="img.img" :alt="`slide-${i}`" class="object-cover w-full opacity-25" />
       </div>
     </div>
   </div>

@@ -6,6 +6,7 @@
     </Head>
 
     <!-- Jumbotron Section -->
+    <Carousel :img="img" />
     <section class="bg-[#121180] rounded-bl-[8rem]">
       <!-- Ornament -->
       <div class="w-full flex justify-between top-0 z-0">
@@ -68,6 +69,7 @@
     </section>
 
     <!-- Program MBKM -->
+
     <section class="container mx-auto py-14">
       <!-- Title Section -->
       <TitleSection title="PROGRAM MBKM" />
@@ -291,23 +293,26 @@
 <script setup>
 // const isOpen = ref(false);
 // const pages = ref(1);
-// const img = ref([
-//   {
-//     id: "1",
-//     img: "https://dummyimage.com/1536x592/dedede/4d4d4d&text=Image+1",
-//     content: "SLIDE 1",
-//   },
-//   {
-//     id: "2",
-//     img: "https://dummyimage.com/1536x592/dedede/4d4d4d&text=Image+2",
-//     content: "SLIDE 2",
-//   },
-//   {
-//     id: "3",
-//     img: "https://dummyimage.com/1536x592/dedede/4d4d4d&text=Image+3",
-//     content: "SLIDE 3",
-//   },
-// ]);
+const img = ref([
+  {
+    id: "1",
+    img:
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    content: "SLIDE 1",
+  },
+  {
+    id: "2",
+    img:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    content: "SLIDE 2",
+  },
+  {
+    id: "3",
+    img:
+      "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    content: "SLIDE 3",
+  },
+]);
 
 // const getData = (page) => {
 //   console.log(page);
