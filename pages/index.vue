@@ -29,7 +29,7 @@
       <!-- Content Jumbotron -->
       <div class="container mx-auto relative z-20 lg:max-w-xl">
         <div
-          class="flex flex-col gap-4 items-center pt-[9rem] lg:justify-center lg:pt-[9rem]"
+          class="flex flex-col gap-4 items-center pt-[6rem] lg:justify-center lg:pt-[9rem]"
         >
           <!-- <button
             type="button"
@@ -41,7 +41,7 @@
         </div>
         <div class="flex justify-center p-7">
           <h1
-            class="text-white font-bold text-[2.5em] text-center leading-[55px] lg:text-[3.35rem]"
+            class="text-white font-bold text-[2.3em] text-center leading-[55px] lg:text-[3.35rem]"
           >
             MERDEKA BELAJAR
             <span

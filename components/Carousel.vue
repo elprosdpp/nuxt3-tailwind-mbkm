@@ -20,7 +20,7 @@
         </div>
 
         <!-- Image Slider Carousel -->
-        <img :src="img.img" :alt="`slide-${i}`" class="object-cover w-full opacity-25" />
+        <img :src="img.img" :alt="`slide-${i}`" class="object-cover h-[50em] w-full opacity-25 lg:h-auto" />
       </div>
     </div>
   </div>
