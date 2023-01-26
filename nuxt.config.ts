@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       title: 'Merdeka Belajar Kampus Merdeka | Universitas Ngudi Waluyo',
       meta: [
         // <meta name="description" content="My amazing site">
-        { name: 'description', content: 'Orientasi Kece Mahasiswa Baru, OKMABA, UNW, OKMABA UNW, okmaba unw, ospek unw' }
+        { name: 'description', content: 'Merdeka Belajar Kampus Merdeka Universitas Ngudi Waluyo, MBKM UNW, Merdeka Belajar UNW, Universitas Ngudi Waluyo MBKM, MBKM Ngudi Waluyo' }
       ],
       link: [
         {
