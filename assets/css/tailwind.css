@@ -7,9 +7,17 @@
 }
 
 .navbar {
-  @apply fixed right-0 left-0 z-50 bg-white h-[100px] text-white shadow-md transition-opacity ease-in;
+  @apply fixed right-0 left-0 z-50 bg-white text-white shadow-md transition-opacity ease-in lg:h-[100px];
 }
 
 .nav-text {
   @apply flex space-x-8 items-center text-[16px] font-semibold text-black;
+}
+
+.text-mobile-menu {
+  @apply text-black font-bold text-[13px] leading-4;
+}
+
+.btn-toggle {
+  @apply text-black;
 }

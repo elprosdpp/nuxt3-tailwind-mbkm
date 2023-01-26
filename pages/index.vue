@@ -9,50 +9,51 @@
     <section class="bg-[#121180] rounded-bl-[8rem]">
       <!-- Ornament -->
       <div class="w-full flex justify-between top-0 z-0">
-        <div class="">
+        <!-- <div class="">
           <img
             src="@/assets/img/hero-top-left-image.svg"
             alt="Ornament"
-            class="absolute left-0 w-[31rem]"
+            class="absolute left-0 w-[25rem]"
           />
         </div>
         <div class="float-right">
           <img
             src="@/assets/img/hero-top-right-image.svg"
             alt="Ornament"
-            class="absolute right-0 w-[31rem]"
+            class="absolute right-0 w-[30rem]"
           />
-        </div>
+        </div> -->
       </div>
 
       <!-- Content Jumbotron -->
       <div class="container mx-auto max-w-xl relative z-20">
-        <div class="flex justify-center items-center pt-[10rem]">
-          <button
+        <div
+          class="flex flex-col gap-4 items-center pt-[9rem] lg:justify-center lg:pt-[9rem]"
+        >
+          <!-- <button
             type="button"
             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-xs px-1 py-1 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
-            OKMABA
-          </button>
-          <p class="text-white text-sm">
-            Strapi Cloud is coming soon ☁️
-            <span class="text-violet-500">Join the waitlist</span>
-          </p>
+            MBKM UNW
+          </button> -->
+          <p class="text-white text-xs lg:text-sm">MBKM Universitas Ngudi Waluyo 👋</p>
         </div>
-        <div class="flex justify-center pt-7">
-          <h1 class="text-white font-bold text-[3.35rem] text-center">
-            Manage Any Content.
+        <div class="flex justify-center p-7">
+          <h1
+            class="text-white font-bold text-[2.8em] text-center leading-[55px] lg:text-[3.35rem]"
+          >
+            MERDEKA BELAJAR
             <span
               class="text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-orange-400"
-              >Anywhere.</span
+              >KAMPUS MERDEKA</span
             >
           </h1>
         </div>
 
-        <div class="py-8">
+        <div class="py-3">
           <p class="text-gray-400 text-center">
-            Strapi is the leading open-source headless CMS. It’s 100% JavaScript and fully
-            customizable.
+            Website Resmi Merdeka Belajar Kampus Merdeka <br />
+            Universitas Ngudi Waluyo
           </p>
 
           <div class="flex justify-center items-center py-8">
@@ -60,13 +61,7 @@
               type="button"
               class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             >
-              Purple to Blue
-            </button>
-            <button
-              type="button"
-              class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-            >
-              Cyan to Blue
+              Daftar Sekarang!
             </button>
           </div>
         </div>
@@ -74,11 +69,11 @@
     </section>
 
     <!-- Program MBKM -->
-    <section class="container mx-auto py-16">
+    <section class="container mx-auto py-14">
       <!-- Title Section -->
       <TitleSection title="PROGRAM MBKM" />
       <!-- Content Section -->
-      <div class="grid grid-cols-3 gap-4 p-5">
+      <div class="flex flex-col p-5 lg:grid grid-cols-3 gap-4">
         <div class="">
           <a
             href="#"
@@ -125,12 +120,12 @@
     </section>
 
     <!-- Sambutan Rektor -->
-    <section class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 h-[43rem]">
-      <div class="grid gap-4 grid-cols-2 p-24">
+    <section class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 lg:h-[43rem]">
+      <div class="grid gap-4 grid-cols-2 p-5 lg:p-24">
         <!-- Left Content -->
         <div class="1">
           <div class="border-b-8 border-indigo-500 w-32 mb-5"></div>
-          <h1 class="text-white font-bold text-[50px] leading-[55px]">
+          <h1 class="text-white font-bold text-2xl lg:text-[50px] lg:leading-[55px]">
             Sambutan Rektor <br />
             <span
               class="text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-orange-400"
@@ -138,16 +133,11 @@
             >
           </h1>
 
-          <p class="text-white my-8 text-justify">
+          <p class="text-white my-8 text-justify text-xs lg:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quisquam
             quaerat obcaecati praesentium? Vel ipsum debitis deleniti in consectetur quis
             commodi reiciendis totam amet nostrum facilis id odit quia placeat,
-            exercitationem ab? Esse rem voluptate temporibus, possimus blanditiis
-            doloribus? Vitae molestiae facilis eveniet unde dicta omnis harum voluptates
-            quam, placeat voluptate temporibus quis excepturi adipisci est quos esse quia
-            saepe quidem at. Mollitia architecto quis, a corrupti dolore temporibus
-            voluptatum quibusdam porro assumenda facere reiciendis praesentium ipsam
-            soluta corporis molestiae!
+            exercitationem ab.
           </p>
 
           <button
@@ -174,10 +164,10 @@
         </div>
 
         <!-- Right Content -->
-        <div class="flex justify-center relative -mt-24 h-[42rem]">
-          <div class="absolute bottom-[8rem]">
+        <div class="flex justify-center relative h-[20rem] lg:h-[42rem] lg:-mt-24">
+          <div class="absolute -bottom-3 lg:bottom-[8rem]">
             <span
-              class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-indigo-600 text-white px-5 py-2 text-2xl font-bold"
+              class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-indigo-600 text-white px-5 py-2 text-xs font-bold lg:text-2xl"
             >
               Prof. Dr. Subyantoro, M.Hum.
             </span>
@@ -188,11 +178,11 @@
     </section>
 
     <!-- Berita Terbaru -->
-    <section class="container mx-auto py-16">
+    <section class="container mx-auto py-14">
       <!-- Title Section -->
       <TitleSection title="BERITA TERBARU" />
       <!-- Content Section -->
-      <div class="flex justify-center items-center gap-10 p-5">
+      <div class="flex flex-col justify-center items-center gap-10 p-5 lg:flex-row">
         <!-- Card 1 -->
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
           <a href="#">
