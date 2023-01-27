@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.6",
+    "@splidejs/vue-splide": "^0.6.12",
+    "aos": "^2.3.4",
     "flowbite": "^1.6.2"
   }
 }

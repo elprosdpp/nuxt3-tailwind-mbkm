@@ -75,7 +75,7 @@
       <TitleSection title="PROGRAM MBKM" />
       <!-- Content Section -->
       <div class="flex flex-col p-5 lg:grid grid-cols-3 gap-4">
-        <div class="">
+        <div class="" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="500">
           <a
             href="#"
             class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md"
@@ -89,7 +89,7 @@
             </p>
           </a>
         </div>
-        <div class="">
+        <div class="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
           <a
             href="#"
             class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md"
@@ -103,7 +103,7 @@
             </p>
           </a>
         </div>
-        <div class="">
+        <div class="" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="700">
           <a
             href="#"
             class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md"
@@ -121,12 +121,15 @@
     </section>
 
     <!-- Sambutan Rektor -->
-    <section class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 lg:h-[43rem]">
+    <section
+      class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 lg:h-[43rem]"
+      data-aos="fade-in"
+    >
       <div
         class="flex flex-col-reverse justify-between p-5 gap-4 lg:p-24 lg:grid grid-cols-2"
       >
         <!-- Left Content -->
-        <div class="1">
+        <div class="1" data-aos="fade-right" data-aos-easing="ease-in-sine">
           <div class="border-b-8 border-indigo-500 w-32 mb-5"></div>
           <h1 class="text-white font-bold text-2xl lg:text-[50px] lg:leading-[55px]">
             Sambutan Rektor <br />
@@ -167,7 +170,10 @@
         </div>
 
         <!-- Right Content -->
-        <div class="flex justify-center relative lg:h-[42rem] lg:-mt-24">
+        <div
+          class="flex justify-center relative lg:h-[42rem] lg:-mt-24"
+          data-aos="fade-left"
+        >
           <div class="absolute bottom-20 lg:bottom-[5rem]">
             <span
               class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-indigo-600 text-white px-5 py-2 text-xs font-bold lg:text-2xl"
@@ -189,7 +195,10 @@
       <!-- Title Section -->
       <TitleSection title="BERITA TERBARU" />
       <!-- Content Section -->
-      <div class="flex flex-col justify-center items-center gap-10 p-5 lg:flex-row">
+      <div
+        class="flex flex-col justify-center items-center gap-10 p-5 lg:flex-row"
+        data-aos="fade-up"
+      >
         <!-- Card 1 -->
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
           <a href="#">
