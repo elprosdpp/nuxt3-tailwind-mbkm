@@ -1,9 +1,9 @@
 <template>
-  <div class="absolute">
+  <div
+    class="absolute backdrop-opacity-10 backdrop-invert bg-[#121180] rounded-bl-[8rem]"
+  >
     <!-- Carousel wrapper -->
-    <div
-      class="relative overflow-hidden rounded-lg h-[32.2rem] object-cover rounded-bl-[8rem]"
-    >
+    <div class="relative overflow-hidden h-[32.2rem] object-cover rounded-bl-[8rem]">
       <!-- Item Carousel -->
       <div
         class="carousel-item relative w-full transform transition-all duration-500 ease-in-out"
@@ -20,7 +20,11 @@
         </div>
 
         <!-- Image Slider Carousel -->
-        <img :src="img.img" :alt="`slide-${i}`" class="object-cover h-[50em] w-full opacity-25 lg:h-auto" />
+        <img
+          :src="img.img"
+          :alt="`slide-${i}`"
+          class="object-cover h-[50em] w-full opacity-25 lg:h-auto"
+        />
       </div>
     </div>
   </div>

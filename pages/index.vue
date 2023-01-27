@@ -7,7 +7,7 @@
 
     <!-- Jumbotron Section -->
     <Carousel :img="img" />
-    <section class="bg-[#121180] rounded-bl-[8rem]">
+    <section class="rounded-bl-[8rem]">
       <!-- Ornament -->
       <div class="w-full flex justify-between top-0 z-0">
         <!-- <div class="">
