@@ -99,8 +99,8 @@
 
 <script setup>
 // or other themes
-import "@splidejs/vue-splide/css/skyblue";
-import "@splidejs/vue-splide/css/sea-green";
+// import "@splidejs/vue-splide/css/skyblue";
+// import "@splidejs/vue-splide/css/sea-green";
 
 definePageMeta({
   layout: "default",

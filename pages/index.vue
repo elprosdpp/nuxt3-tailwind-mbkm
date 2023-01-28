@@ -294,14 +294,152 @@
 
     <!-- Testimonials -->
     <section class="container mx-auto py-16">
-      <div class="bg-[#121180] rounded-tr-[8rem]"></div>
+      <!-- Title Section -->
+      <!-- <TitleSection title="TESTIMONI" /> -->
+      <!-- Content Section -->
+      <div class="bg-[#121180] rounded-bl-[8rem] p-14">
+        <!-- Comma -->
+        <div
+          class="flex justify-center rounded-full w-40 h-40 bg-blue-500 p-5 relative -mt-[8rem]"
+          data-aos="zoom-in"
+        >
+          <img src="../assets/img/quote1.png" alt="Testimoni" class="w-24 h-24 mt-3" />
+        </div>
+
+        <!-- Content Rendered -->
+        <div class="flex flex-col lg:grid grid-cols-5 items-center">
+          <!-- Left Content -->
+          <div class="col-span-2" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <div class="border-b-8 border-indigo-500 w-32 mb-4 mt-10"></div>
+            <h1 class="text-white font-bold text-2xl lg:text-[25px] lg:leading-[27px]">
+              TESTIMONI MBKM<br />
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-orange-400"
+              >
+                Universitas Ngudi Waluyo.</span
+              >
+            </h1>
+
+            <p class="text-white my-8 text-justify text-sm lg:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+              quisquam quaerat obcaecati praesentium? Vel ipsum debitis deleniti in
+              consectetur quis commodi reiciendis totam amet nostrum facilis id odit quia
+              placeat, exercitationem ab.
+            </p>
+
+            <!-- <button
+              type="button"
+              class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-8 inline-flex items-center lg:mb-2"
+            >
+              <svg
+                class="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+                ></path>
+              </svg>
+              Read More
+            </button> -->
+          </div>
+
+          <!-- Right Content -->
+          <div class="col-span-3">
+            <Splide :options="customOptions" aria-label="My Favorite Images">
+              <SplideSlide>
+                <div
+                  class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-5">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      Here are the biggest enterprise technology acquisitions of 2021 so
+                      far, in reverse chronological order.
+                    </p>
+                    <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                      Jack Sparrow
+                    </h5>
+                    <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                  </div>
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                <div
+                  class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-5">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      Here are the biggest enterprise technology acquisitions of 2021 so
+                      far, in reverse chronological order.
+                    </p>
+                    <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                      Jack Sparrow
+                    </h5>
+                    <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                  </div>
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                <div
+                  class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg"
+                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-5">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      Here are the biggest enterprise technology acquisitions of 2021 so
+                      far, in reverse chronological order.
+                    </p>
+                    <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                      Jack Sparrow
+                    </h5>
+                    <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                  </div>
+                </div>
+              </SplideSlide>
+            </Splide>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
 
 <script setup>
 // const isOpen = ref(false);
-// const pages = ref(1);
+const perpage = ref(1);
+
+const customOptions = {
+  rewind: true,
+  perPage: perpage.value,
+  gap: "1rem",
+};
+
 const img = ref([
   {
     id: "1",
@@ -323,10 +461,34 @@ const img = ref([
   },
 ]);
 
+const sizeWindow = () => {
+  const track = document.getElementById("splide01-track");
+  if (window.matchMedia("(min-width: 500px)").matches) {
+    console.log("Screen width is at least 500px ");
+    track.classList.remove("splide__track1");
+    perpage = 2;
+  } else {
+    console.log("Screen less than 500px");
+    track.classList.add("splide__track1");
+    perpage = 1;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("resize", sizeWindow);
+});
+
 // const getData = (page) => {
 //   console.log(page);
 //   pages.value = page;
 // };
 </script>
 
-<style scoped></style>
+<style>
+.splide__track1 {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  max-width: 19rem;
+}
+</style>

@@ -5,6 +5,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
 
+  typescript: {
+    shim: false
+  },
+
   app: {
     head: {
       title: 'Merdeka Belajar Kampus Merdeka | Universitas Ngudi Waluyo',
