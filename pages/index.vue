@@ -353,7 +353,12 @@
           <!-- Right Content -->
           <div class="col-span-3" data-aos="fade-left" data-aos-easing="ease-in-sine">
             <Splide
-              :options="{ rewind: true, perPage: windowWidth.perpage, gap: '1rem' }"
+              :options="{
+                rewind: true,
+                perPage: windowWidth.perpage,
+                gap: '1rem',
+                autoplay: true,
+              }"
               aria-label="My Favorite Images"
             >
               <SplideSlide>
