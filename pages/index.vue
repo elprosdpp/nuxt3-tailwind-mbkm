@@ -122,7 +122,7 @@
 
     <!-- Sambutan Rektor -->
     <section
-      class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 lg:h-[43rem]"
+      class="container mx-auto bg-[#121180] rounded-tr-[8rem] my-24 overflow-hidden lg:h-[43rem]"
       data-aos="fade-in"
     >
       <div
@@ -307,7 +307,7 @@
         </div>
 
         <!-- Content Rendered -->
-        <div class="flex flex-col lg:grid grid-cols-5 items-center">
+        <div class="flex flex-col lg:grid grid-cols-5 items-center overflow-hidden">
           <!-- Left Content -->
           <div class="col-span-2" data-aos="fade-right" data-aos-easing="ease-in-sine">
             <div class="border-b-8 border-indigo-500 w-32 mb-4 mt-10"></div>
@@ -351,7 +351,7 @@
           </div>
 
           <!-- Right Content -->
-          <div class="col-span-3">
+          <div class="col-span-3" data-aos="fade-left" data-aos-easing="ease-in-sine">
             <Splide
               :options="{ rewind: true, perPage: windowWidth.perpage, gap: '1rem' }"
               aria-label="My Favorite Images"
@@ -434,11 +434,6 @@
 </template>
 
 <script setup>
-// const isOpen = ref(false);
-// const perpage = ref(1);
-// let windowWidth = ref(0);
-// const screenWidth = ref(1366);
-
 const windowWidth = reactive({
   width: 0,
   perpage: 1,
@@ -502,12 +497,6 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("resize", onScreenResize);
 });
-
-// const customOptions = {
-//   rewind: true,
-//   perPage: Page.value,
-//   gap: "1rem",
-// };
 
 watchEffect(() => {
   // windowWidth;
