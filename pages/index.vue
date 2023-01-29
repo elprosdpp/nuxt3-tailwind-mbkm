@@ -352,7 +352,10 @@
 
           <!-- Right Content -->
           <div class="col-span-3">
-            <Splide :options="customOptions" aria-label="My Favorite Images">
+            <Splide
+              :options="{ rewind: true, perPage: windowWidth.perpage, gap: '1rem' }"
+              aria-label="My Favorite Images"
+            >
               <SplideSlide>
                 <div
                   class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
@@ -432,13 +435,14 @@
 
 <script setup>
 // const isOpen = ref(false);
-const perpage = ref(1);
+// const perpage = ref(1);
+// let windowWidth = ref(0);
+// const screenWidth = ref(1366);
 
-const customOptions = {
-  rewind: true,
-  perPage: perpage.value,
-  gap: "1rem",
-};
+const windowWidth = reactive({
+  width: 0,
+  perpage: 1,
+});
 
 const img = ref([
   {
@@ -461,21 +465,53 @@ const img = ref([
   },
 ]);
 
-const sizeWindow = () => {
-  const track = document.getElementById("splide01-track");
-  if (window.matchMedia("(min-width: 500px)").matches) {
-    console.log("Screen width is at least 500px ");
+// const sizeWindow = () => {
+//   const track = document.getElementById("splide01-track");
+//   if (window.matchMedia("(min-width: 500px)").matches) {
+//     console.log("Screen width is at least 500px ");
+//     track.classList.remove("splide__track1");
+//     // perpage.value + 1;
+//   } else {
+//     console.log("Screen less than 500px");
+//     track.classList.add("splide__track1");
+//     // perpage.value - 1;
+//   }
+// };
+
+const slide = computed(() => {
+  let track = document.getElementById("splide01-track");
+  if (windowWidth.width >= 500) {
     track.classList.remove("splide__track1");
-    perpage = 2;
+    return (windowWidth.perpage = 2);
   } else {
-    console.log("Screen less than 500px");
     track.classList.add("splide__track1");
-    perpage = 1;
+    return (windowWidth.perpage = 1);
   }
+});
+
+const onScreenResize = () => {
+  windowWidth.width = window.innerWidth;
+  return (windowWidth.perpage = slide.value);
 };
 
 onMounted(() => {
-  window.addEventListener("resize", sizeWindow);
+  window.addEventListener("resize", onScreenResize);
+  onScreenResize();
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", onScreenResize);
+});
+
+// const customOptions = {
+//   rewind: true,
+//   perPage: Page.value,
+//   gap: "1rem",
+// };
+
+watchEffect(() => {
+  // windowWidth;
+  onScreenResize;
 });
 
 // const getData = (page) => {
