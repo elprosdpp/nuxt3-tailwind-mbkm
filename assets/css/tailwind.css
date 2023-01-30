@@ -6,6 +6,10 @@
   @apply font-bold border-orange-600 border-b-2 p-1;
 }
 
+#nav-mobile {
+  @apply font-bold border-orange-600 border-b-0 p-0;
+}
+
 .navbar {
   @apply fixed right-0 left-0 z-50 bg-white text-white shadow-md transition-opacity ease-in lg:h-[100px];
 }

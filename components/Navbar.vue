@@ -6,14 +6,14 @@
     >
       <div class="container mx-auto flex items-center justify-between pb-0 lg:pb-10">
         <!-- Header logo -->
-        <div class="flex items-center gap-2" id="nav-mobile">
+        <nuxt-link to="/" class="flex items-center gap-2" id="nav-mobile">
           <img class="w-10" src="../assets/img/unw.png" alt="LOGO UNW" />
           <h1 class="font-bold text-[13px] leading-4">
             MERDEKA BELAJAR KAMPUS MERDEKA
             <br />
             <span class="text-[17px]">UNIVERSITAS NGUDI WALUYO</span>
           </h1>
-        </div>
+        </nuxt-link>
 
         <!-- Mobile toggle -->
         <div class="md:hidden relative z-30">
