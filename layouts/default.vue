@@ -12,6 +12,7 @@
     </div>
 
     <!-- Footer -->
+    <FooterComp />
   </div>
 </template>
 

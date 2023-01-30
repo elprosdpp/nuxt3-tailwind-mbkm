@@ -352,85 +352,89 @@
 
           <!-- Right Content -->
           <div class="col-span-3" data-aos="fade-left" data-aos-easing="ease-in-sine">
-            <Splide
-              :options="{
-                rewind: true,
-                perPage: windowWidth.perpage,
-                gap: '1rem',
-                autoplay: true,
-              }"
-              aria-label="My Favorite Images"
-            >
-              <SplideSlide>
-                <div
-                  class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                      Here are the biggest enterprise technology acquisitions of 2021 so
-                      far, in reverse chronological order.
-                    </p>
-                    <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                      Jack Sparrow
-                    </h5>
-                    <p class="-mt-3 text-[.7rem]">HR Manager</p>
+            <div class="splide__track splide__track1" id="splide01-track">
+              <Splide
+                class="splide1"
+                id="splide1"
+                :options="{
+                  rewind: true,
+                  perPage: perpage,
+                  gap: '1rem',
+                  autoplay: true,
+                }"
+                aria-label="My Favorite Images"
+              >
+                <SplideSlide>
+                  <div
+                    class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
+                  >
+                    <a href="#">
+                      <img
+                        class="rounded-t-lg"
+                        src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="p-5">
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        Here are the biggest enterprise technology acquisitions of 2021 so
+                        far, in reverse chronological order.
+                      </p>
+                      <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                        Jack Sparrow
+                      </h5>
+                      <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                    </div>
                   </div>
-                </div>
-              </SplideSlide>
-              <SplideSlide>
-                <div
-                  class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                      Here are the biggest enterprise technology acquisitions of 2021 so
-                      far, in reverse chronological order.
-                    </p>
-                    <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                      Jack Sparrow
-                    </h5>
-                    <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                </SplideSlide>
+                <SplideSlide>
+                  <div
+                    class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
+                  >
+                    <a href="#">
+                      <img
+                        class="rounded-t-lg"
+                        src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="p-5">
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        Here are the biggest enterprise technology acquisitions of 2021 so
+                        far, in reverse chronological order.
+                      </p>
+                      <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                        Jack Sparrow
+                      </h5>
+                      <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                    </div>
                   </div>
-                </div>
-              </SplideSlide>
-              <SplideSlide>
-                <div
-                  class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                      Here are the biggest enterprise technology acquisitions of 2021 so
-                      far, in reverse chronological order.
-                    </p>
-                    <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                      Jack Sparrow
-                    </h5>
-                    <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                </SplideSlide>
+                <SplideSlide>
+                  <div
+                    class="max-w-xs lg:max-w-[18rem] bg-white border border-gray-200 rounded-lg shadow"
+                  >
+                    <a href="#">
+                      <img
+                        class="rounded-t-lg"
+                        src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="p-5">
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        Here are the biggest enterprise technology acquisitions of 2021 so
+                        far, in reverse chronological order.
+                      </p>
+                      <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                        Jack Sparrow
+                      </h5>
+                      <p class="-mt-3 text-[.7rem]">HR Manager</p>
+                    </div>
                   </div>
-                </div>
-              </SplideSlide>
-            </Splide>
+                </SplideSlide>
+              </Splide>
+            </div>
           </div>
         </div>
       </div>
@@ -439,10 +443,12 @@
 </template>
 
 <script setup>
-const windowWidth = reactive({
-  width: 0,
-  perpage: 1,
-});
+// const windowWidth = reactive({
+//   width: 0,
+//   perpage: 1,
+// });
+
+const perpage = ref(1);
 
 const img = ref([
   {
@@ -465,47 +471,24 @@ const img = ref([
   },
 ]);
 
-// const sizeWindow = () => {
-//   const track = document.getElementById("splide01-track");
-//   if (window.matchMedia("(min-width: 500px)").matches) {
-//     console.log("Screen width is at least 500px ");
-//     track.classList.remove("splide__track1");
-//     // perpage.value + 1;
-//   } else {
-//     console.log("Screen less than 500px");
-//     track.classList.add("splide__track1");
-//     // perpage.value - 1;
-//   }
-// };
-
-const slide = computed(() => {
-  let track = document.getElementById("splide01-track");
-  if (windowWidth.width >= 500) {
+const sizeWindow = () => {
+  const track = document.getElementById("splide01-track");
+  const splid = document.getElementById("splide1");
+  if (window.matchMedia("(min-width: 500px)").matches) {
+    console.log("Screen width is at least 500px ");
     track.classList.remove("splide__track1");
-    return (windowWidth.perpage = 2);
+    splid.classList.remove("splide1");
+    return (perpage.value = 2);
   } else {
+    console.log("Screen less than 500px");
     track.classList.add("splide__track1");
-    return (windowWidth.perpage = 1);
+    splid.classList.add("splide1");
+    return (perpage.value = 1);
   }
-});
-
-const onScreenResize = () => {
-  windowWidth.width = window.innerWidth;
-  return (windowWidth.perpage = slide.value);
 };
-
 onMounted(() => {
-  window.addEventListener("resize", onScreenResize);
-  onScreenResize();
-});
-
-onUnmounted(() => {
-  window.removeEventListener("resize", onScreenResize);
-});
-
-watchEffect(() => {
-  // windowWidth;
-  onScreenResize;
+  window.addEventListener("resize", sizeWindow);
+  sizeWindow();
 });
 
 // const getData = (page) => {
@@ -515,10 +498,23 @@ watchEffect(() => {
 </script>
 
 <style>
+.splide1 {
+  padding: 0;
+}
+.splide__arrows {
+  visibility: hidden;
+}
+
 .splide__track1 {
   overflow: hidden;
   position: relative;
   z-index: 0;
   max-width: 19rem;
+}
+
+.splide__track {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 </style>
