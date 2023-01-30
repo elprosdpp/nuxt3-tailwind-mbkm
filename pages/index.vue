@@ -351,6 +351,7 @@
           </div>
 
           <!-- Right Content -->
+
           <div class="col-span-3" data-aos="fade-left" data-aos-easing="ease-in-sine">
             <div class="splide__track splide__track1" id="splide01-track">
               <Splide
@@ -447,7 +448,7 @@
 //   width: 0,
 //   perpage: 1,
 // });
-
+// const route = useRoute();
 const perpage = ref(1);
 
 const img = ref([
@@ -474,21 +475,26 @@ const img = ref([
 const sizeWindow = () => {
   const track = document.getElementById("splide01-track");
   const splid = document.getElementById("splide1");
-  if (window.matchMedia("(min-width: 500px)").matches) {
-    console.log("Screen width is at least 500px ");
+  if (window.innerWidth >= 500) {
+    // console.log("Screen width is at least 500px ");
     track.classList.remove("splide__track1");
     splid.classList.remove("splide1");
     return (perpage.value = 2);
   } else {
-    console.log("Screen less than 500px");
+    // console.log("Screen less than 500px");
     track.classList.add("splide__track1");
     splid.classList.add("splide1");
     return (perpage.value = 1);
   }
 };
+
 onMounted(() => {
   window.addEventListener("resize", sizeWindow);
   sizeWindow();
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", sizeWindow);
 });
 
 // const getData = (page) => {
