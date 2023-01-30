@@ -4,6 +4,11 @@
     <Head>
       <Title>Unduhan | MBKM Universitas Ngudi Waluyo</Title>
     </Head>
+
+    <!-- Jumbotron Section -->
+    <section>
+      <HeaderPage text="Unduhan" />
+    </section>
   </div>
 </template>
 
