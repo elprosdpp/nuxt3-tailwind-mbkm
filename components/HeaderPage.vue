@@ -51,7 +51,7 @@
       </nav>
 
       <h1 class="text-white font-bold text-[3.5rem] lg:text-[4.5rem]">{{ text }}</h1>
-      <div class="text-[#305fb8] font-bold text-[12rem] absolute -bottom-[3rem] opacity-5">
+      <div class="text-[#2f65c9] font-bold text-[12rem] absolute -bottom-[3rem] opacity-5">
         {{ text }}
       </div>
     </div>
