@@ -61,7 +61,7 @@
         </div>
 
         <!-- Table Render Data -->
-        <div class="" v-if="pending">Loading...</div>
+        <div class="" v-if="pending"><LoadingTable /></div>
         <table v-else class="w-full text-sm text-left text-gray-500">
           <thead class="border text-xs text-gray-700 uppercase">
             <tr>
@@ -82,12 +82,14 @@
               <td class="px-6 py-4">{{ dokumen.name }}</td>
               <td class="px-6 py-4">{{ dokumen.description }}</td>
               <td class="px-6 py-4">
-                <button
+                <a
+                  :href="`http://panel-bkapp.unw.ac.id:2324/file-password/` + dokumen.id"
                   class="font-medium text-blue-600 hover:underline"
-                  @click="download(dokumen.id)"
+                  target="_blank"
+                  download
                 >
                   Download
-                </button>
+                </a>
               </td>
             </tr>
           </tbody>
@@ -122,7 +124,6 @@ const runtimeConfigs = useRuntimeConfig();
 const page = ref(1);
 const search = ref([]);
 const paginates = ref(10);
-const router = useRouter();
 
 // fetch Data
 const { data: documents, pending, refresh } = await useFetch(
@@ -144,7 +145,7 @@ function paginate(event) {
 
 // Silent Update URL
 watch(documents, () => {
-  router.push({
+  navigateTo({
     path: "/unduhan",
     query: {
       paginate: paginates.value,
