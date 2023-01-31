@@ -4,7 +4,9 @@
       class="fixed w-full bg-transparent z-50 p-6 text-white font-semibold lg:p-0"
       id="mynav"
     >
-      <div class="container mx-auto flex items-center justify-between pb-0 lg:pb-10">
+      <div
+        class="container mx-auto flex items-center justify-between pb-0 lg:pb-10 lg:pt-[1.5rem]"
+      >
         <!-- Header logo -->
         <nuxt-link to="/" class="flex items-center gap-2" id="nav-mobile">
           <img class="w-10" src="../assets/img/unw.png" alt="LOGO UNW" />
@@ -40,7 +42,7 @@
               <nuxt-link to="/" class="link p-1">Home </nuxt-link>
             </li>
             <li>
-              <div class="dropdown link py-1">
+              <!-- <div class="dropdown link py-1">
                 <div class="flex justify-between items-center">
                   <button class="cursor-pointer dropbtn">Program MBKM</button>
                   <svg
@@ -167,7 +169,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
+              <nuxt-link to="/program" class="p-1">Program </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/kurikulum" class="p-1">Kurikulum </nuxt-link>
@@ -193,7 +196,7 @@
 
         <!-- Drawer Menu -->
         <aside
-          class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 md:hidden"
+          class="p-5 transform top-0 left-0 w-64 bg-white text-black fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 md:hidden"
           :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
         >
           <div class="close">
@@ -213,36 +216,46 @@
           </div>
 
           <span @click="isOpen = false" class="flex w-full items-center p-4 border-b">
-            <h1>OKMABA</h1>
+            <h1>MBKM-UNW</h1>
           </span>
 
           <ul class="divide-y font-sans">
             <li>
-              <a href="#" @click="isOpen = false" class="my-4 inline-block">Home</a>
+              <nuxt-link to="/" @click="isOpen = false" class="my-4 inline-block"
+                >Home
+              </nuxt-link>
             </li>
             <li>
-              <a href="#" @click="isOpen = false" class="my-4 inline-block">Services</a>
+              <nuxt-link to="/program" @click="isOpen = false" class="my-4 inline-block"
+                >Program
+              </nuxt-link>
             </li>
             <li>
-              <a href="#" @click="isOpen = false" class="my-4 inline-block">Features</a>
+              <nuxt-link to="/kurikulum" @click="isOpen = false" class="my-4 inline-block"
+                >Kurikulum
+              </nuxt-link>
             </li>
             <li>
-              <a href="#" @click="isOpen = false" class="my-4 inline-block">FAQ</a>
+              <nuxt-link to="/unduhan" @click="isOpen = false" class="my-4 inline-block"
+                >Unduhan
+              </nuxt-link>
             </li>
             <li>
-              <a href="#" @click="isOpen = false" class="my-4 inline-block">Contact</a>
+              <nuxt-link to="/kontak" @click="isOpen = false" class="my-4 inline-block"
+                >Kontak</nuxt-link
+              >
             </li>
             <li>
               <a
                 href="#"
                 @click="isOpen = false"
                 class="my-8 w-full text-center font-semibold cta inline-block bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white"
-                >Sign Up</a
+                >Login</a
               >
             </li>
           </ul>
 
-          <div class="follow">
+          <!-- <div class="follow">
             <p class="italic font-sans text-sm">follow us:</p>
             <div class="social flex space-x-5 mt-4">
               <a href="#">
@@ -314,7 +327,7 @@
                 </svg>
               </a>
             </div>
-          </div>
+          </div> -->
         </aside>
       </div>
     </nav>
