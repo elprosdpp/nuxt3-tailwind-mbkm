@@ -9,6 +9,13 @@ export default defineNuxtConfig({
     shim: false
   },
 
+  runtimeConfig: {
+    API_URL: "http://panel-bkapp.unw.ac.id:2324/api",
+    public: {
+      API_URL: "http://panel-bkapp.unw.ac.id:2324/api",
+    }
+  },
+
   app: {
     head: {
       title: 'Merdeka Belajar Kampus Merdeka | Universitas Ngudi Waluyo',
