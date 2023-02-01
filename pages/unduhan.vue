@@ -18,7 +18,7 @@
         <hr />
 
         <!-- Filter Search & Paginate -->
-        <div class="flex justify-between items-center my-5">
+        <div class="flex flex-col gap-4 items-center my-5 lg:flex-row justify-between">
           <div class="inline-flex items-center">
             <p class="mr-2">Show</p>
             <select
@@ -72,19 +72,18 @@
           <thead class="border text-xs text-gray-700 uppercase">
             <tr>
               <th scope="col" class="px-6 py-3">No</th>
-              <th scope="col" class="px-6 py-3 cursor-pointer" @click="sortir('name')">
-                <div class="flex items-center">
+              <th scope="col" class="px-6 py-3" @click="sortir('name')">
+                <div class="flex items-center cursor-pointer max-w-[6rem]">
                   Nama File
                   <SortTable :field="field" name="name" :sort="sort" />
                 </div>
               </th>
-              <th scope="col" class="px-6 py-3 cursor-pointer" @click="sortir('slug')">
-                <div class="flex items-center">
+              <th scope="col" class="px-6 py-3" @click="sortir('slug')">
+                <div class="flex items-center cursor-pointer max-w-0">
                   Slug
                   <SortTable :field="field" name="slug" :sort="sort" />
                 </div>
               </th>
-              <!-- <th></th> -->
               <th scope="col" class="px-6 py-3">Deskrisi</th>
               <th scope="col" class="px-6 py-3">Action</th>
             </tr>
@@ -110,7 +109,7 @@
         </table>
 
         <!-- Meta & Pagination -->
-        <div class="flex justify-between items-center my-5">
+        <div class="flex flex-col gap-4 items-center my-5 lg:flex-row justify-between">
           <span class="text-sm text-gray-700 dark:text-gray-400">
             Showing
             <span class="font-semibold text-gray-900">{{ documents.meta.from }}</span>
