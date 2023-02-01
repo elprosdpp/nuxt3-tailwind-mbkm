@@ -72,14 +72,20 @@
           <thead class="border text-xs text-gray-700 uppercase">
             <tr>
               <th scope="col" class="px-6 py-3">No</th>
-              <th scope="col" class="px-6 py-3" @click="sortir('name')">
-                <div class="flex items-center cursor-pointer max-w-[6rem]">
+              <th scope="col" class="px-6 py-3">
+                <div
+                  class="flex items-center cursor-pointer max-w-[6rem]"
+                  @click="sortir('name')"
+                >
                   Nama File
                   <SortTable :field="field" name="name" :sort="sort" />
                 </div>
               </th>
-              <th scope="col" class="px-6 py-3" @click="sortir('slug')">
-                <div class="flex items-center cursor-pointer max-w-0">
+              <th scope="col" class="px-6 py-3">
+                <div
+                  class="flex items-center max-w-[4rem] cursor-pointer"
+                  @click="sortir('slug')"
+                >
                   Slug
                   <SortTable :field="field" name="slug" :sort="sort" />
                 </div>
