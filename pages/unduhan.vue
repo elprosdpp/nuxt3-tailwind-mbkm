@@ -67,8 +67,8 @@
         </div>
 
         <!-- Table Render Data -->
-        <div class="" v-if="pending"><LoadingTable /></div>
-        <table v-else class="w-full text-sm text-left text-gray-500">
+        <!-- <div class="" v-if="pending"><LoadingTable /></div> -->
+        <table  class="w-full text-sm text-left text-gray-500">
           <thead class="border text-xs text-gray-700 uppercase">
             <tr>
               <th scope="col" class="px-6 py-3">No</th>
