@@ -72,56 +72,30 @@
           <thead class="border text-xs text-gray-700 uppercase">
             <tr>
               <th scope="col" class="px-6 py-3">No</th>
-              <th
-                scope="col"
-                class="px-6 py-3 cursor-pointer inline-flex items-center"
-                @click="sortir('name')"
-              >
-                Nama File
-                <div class="flex flex-col items-center ml-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="w-5 h-5"
-                    :class="sort == 'asc' ? 'font-bold text-blue-700' : 'hidden'"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="w-5 h-5"
-                    :class="sort == 'desc' ? 'font-bold text-blue-700' : 'hidden'"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+              <th scope="col" class="px-6 py-3 cursor-pointer" @click="sortir('name')">
+                <div class="flex items-center">
+                  Nama File
+                  <SortTable :field="field" name="name" :sort="sort" />
                 </div>
               </th>
+              <th scope="col" class="px-6 py-3 cursor-pointer" @click="sortir('slug')">
+                <div class="flex items-center">
+                  Slug
+                  <SortTable :field="field" name="slug" :sort="sort" />
+                </div>
+              </th>
+              <!-- <th></th> -->
               <th scope="col" class="px-6 py-3">Deskrisi</th>
               <th scope="col" class="px-6 py-3">Action</th>
             </tr>
           </thead>
           <tbody>
             <tr class="border" v-for="(dokumen, index) in documents.data" :key="index">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-              >
-                {{ documents.meta.from + index }}.
-              </th>
-              <td class="px-6 py-4">{{ dokumen.name }}</td>
-              <td class="px-6 py-4">{{ dokumen.description }}</td>
-              <td class="px-6 py-4">
+              <td scope="row" class="px-6 py-4">{{ documents.meta.from + index }}.</td>
+              <td scope="row" class="px-6 py-4">{{ dokumen.name }}</td>
+              <td scope="row" class="px-6 py-4">{{ dokumen.slug }}</td>
+              <td scope="row" class="px-6 py-4">{{ dokumen.description }}</td>
+              <td scope="row" class="px-6 py-4">
                 <a
                   :href="`http://panel-bkapp.unw.ac.id:2324/file-password/` + dokumen.id"
                   class="font-medium text-blue-600 hover:underline"
