@@ -69,7 +69,6 @@
     </section>
 
     <!-- Program MBKM -->
-
     <section class="container mx-auto py-14">
       <!-- Title Section -->
       <TitleSection title="PROGRAM MBKM" />
@@ -79,7 +78,9 @@
         data-aos="fade-up"
       >
         <!-- Card 1 -->
-        <div class="max-w-sm max-h-96 bg-white border border-gray-200 rounded-lg shadow">
+        <div
+          class="max-w-sm h-[29rem] bg-white border border-gray-200 rounded-lg cursor-pointer shadow hover:shadow-md hover:-translate-y-3 duration-300"
+        >
           <a href="#">
             <img
               class="relative rounded-t-lg h-[6rem] my-10"
@@ -97,15 +98,22 @@
               Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
               <span class="font-bold text-gray-600">Kampus Mengajar</span>
             </p>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">
               <span class="font-bold text-gray-600">Pendaftaran:</span> Telah ditutup pada
               27 November 2022
             </p>
+            <a
+              href="#"
+              class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200"
+              >Selengkapnya</a
+            >
           </div>
         </div>
         <!-- End Card 1 -->
         <!-- Card 1 -->
-        <div class="max-w-sm max-h-96 bg-white border border-gray-200 rounded-lg shadow">
+        <div
+          class="max-w-sm h-[29rem] bg-white border border-gray-200 rounded-lg cursor-pointer shadow hover:shadow-md hover:-translate-y-3 duration-300"
+        >
           <a href="#">
             <img
               class="relative rounded-t-lg h-[6rem] my-10"
@@ -123,15 +131,22 @@
               Rasakan pengalaman dunia kerja dengan terjun langsung melalui
               <span class="font-bold text-gray-600">Magang Merdeka</span>
             </p>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">
               <span class="font-bold text-gray-600">Pendaftaran:</span> Telah ditutup pada
               27 Januari 2023
             </p>
+            <a
+              href="#"
+              class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200"
+              >Selengkapnya</a
+            >
           </div>
         </div>
         <!-- End Card 1 -->
         <!-- Card 1 -->
-        <div class="max-w-sm max-h-96 bg-white border border-gray-200 rounded-lg shadow">
+        <div
+          class="max-w-sm h-[29rem] bg-white border border-gray-200 rounded-lg cursor-pointer shadow hover:shadow-md hover:-translate-y-3 duration-300"
+        >
           <a href="#">
             <img
               class="relative rounded-t-lg h-[6rem] my-10"
@@ -150,18 +165,23 @@
               <span class="font-bold text-gray-600">Pertukaran Mahasiswa </span>dalam
               negeri
             </p>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">
               <span class="font-bold text-gray-600">Pendaftaran:</span> Telah ditutup pada
               5 Juli 2021
             </p>
+            <a
+              href="#"
+              class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200"
+              >Selengkapnya</a
+            >
           </div>
         </div>
         <!-- End Card 1 -->
       </div>
       <!-- Button More News -->
       <div class="flex justify-center mt-5">
-        <button
-          type="button"
+        <nuxt-link
+          to="/program"
           class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 inline-flex items-center"
         >
           <svg
@@ -180,7 +200,7 @@
             ></path>
           </svg>
           Program Lainya
-        </button>
+        </nuxt-link>
       </div>
     </section>
 
@@ -332,8 +352,8 @@
       </div>
       <!-- Button More News -->
       <div class="flex justify-center mt-5">
-        <button
-          type="button"
+        <nuxt-link
+          to="berita"
           class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 inline-flex items-center"
         >
           <svg
@@ -352,7 +372,7 @@
             ></path>
           </svg>
           Berita Lainya
-        </button>
+        </nuxt-link>
       </div>
     </section>
 
@@ -515,6 +535,12 @@ const perpage = ref(1);
 // Fetch Data Slider
 const { data: img } = await useFetch(() => `${runtimeConfigs.public.API_URL}/sliders`);
 
+// Fetch Data Slider
+const { data: news } = await useFetch(
+  () => `${runtimeConfigs.public.API_URL}/news?paginate=3`
+);
+
+// Size Window Function
 const sizeWindow = () => {
   const track = document.getElementById("splide01-track");
   const splid = document.getElementById("splide1");
@@ -539,11 +565,6 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("resize", sizeWindow);
 });
-
-// const getData = (page) => {
-//   console.log(page);
-//   pages.value = page;
-// };
 </script>
 
 <style>
