@@ -21,7 +21,7 @@
 
         <!-- Image Slider Carousel -->
         <img
-          :src="img.img"
+          :src="img.image"
           :alt="`slide-${i}`"
           class="object-cover h-[50em] w-full opacity-25 lg:h-auto"
         />
