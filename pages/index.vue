@@ -6,7 +6,7 @@
     </Head>
 
     <!-- Jumbotron Section -->
-    <Carousel :img="img" />
+    <Carousel :img="img.data" />
     <section class="rounded-bl-[8rem]">
       <!-- Ornament -->
       <div class="w-full flex justify-between top-0 z-0">
@@ -74,49 +74,113 @@
       <!-- Title Section -->
       <TitleSection title="PROGRAM MBKM" />
       <!-- Content Section -->
-      <div class="flex flex-col p-5 lg:grid grid-cols-3 gap-4">
-        <div class="" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="500">
-          <a
-            href="#"
-            class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md"
-          >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              Noteworthy technology acquisitions 2021
-            </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so far, in
-              reverse chronological order.
-            </p>
+      <div
+        class="flex flex-col justify-center items-center gap-10 p-5 lg:flex-row"
+        data-aos="fade-up"
+      >
+        <!-- Card 1 -->
+        <div class="max-w-sm max-h-96 bg-white border border-gray-200 rounded-lg shadow">
+          <a href="#">
+            <img
+              class="relative rounded-t-lg h-[6rem] my-10"
+              src="https://kampusmerdeka.kemdikbud.go.id/static/media/kampus-mengajar-logo.4cb4b8b5.webp"
+              alt=""
+            />
           </a>
-        </div>
-        <div class="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
-          <a
-            href="#"
-            class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md"
-          >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              Noteworthy technology acquisitions 2021
-            </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so far, in
-              reverse chronological order.
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Kampus Mengajar
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+              <span class="font-bold text-gray-600">Kampus Mengajar</span>
             </p>
-          </a>
-        </div>
-        <div class="" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="700">
-          <a
-            href="#"
-            class="block max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow-md"
-          >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              Noteworthy technology acquisitions 2021
-            </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so far, in
-              reverse chronological order.
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <span class="font-bold text-gray-600">Pendaftaran:</span> Telah ditutup pada
+              27 November 2022
             </p>
-          </a>
+          </div>
         </div>
+        <!-- End Card 1 -->
+        <!-- Card 1 -->
+        <div class="max-w-sm max-h-96 bg-white border border-gray-200 rounded-lg shadow">
+          <a href="#">
+            <img
+              class="relative rounded-t-lg h-[6rem] my-10"
+              src="https://kampusmerdeka.kemdikbud.go.id/static/media/msib-logo.8402a51e.webp"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Magang Merdeka
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Rasakan pengalaman dunia kerja dengan terjun langsung melalui
+              <span class="font-bold text-gray-600">Magang Merdeka</span>
+            </p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <span class="font-bold text-gray-600">Pendaftaran:</span> Telah ditutup pada
+              27 Januari 2023
+            </p>
+          </div>
+        </div>
+        <!-- End Card 1 -->
+        <!-- Card 1 -->
+        <div class="max-w-sm max-h-96 bg-white border border-gray-200 rounded-lg shadow">
+          <a href="#">
+            <img
+              class="relative rounded-t-lg h-[6rem] my-10"
+              src="https://kampusmerdeka.kemdikbud.go.id/static/media/pmm-logo.02f2aceb.webp"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Pertukaran Mahasiswa
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Bertukar pengalaman budaya dengan universitas lain melalui
+              <span class="font-bold text-gray-600">Pertukaran Mahasiswa </span>dalam
+              negeri
+            </p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <span class="font-bold text-gray-600">Pendaftaran:</span> Telah ditutup pada
+              5 Juli 2021
+            </p>
+          </div>
+        </div>
+        <!-- End Card 1 -->
+      </div>
+      <!-- Button More News -->
+      <div class="flex justify-center mt-5">
+        <button
+          type="button"
+          class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 inline-flex items-center"
+        >
+          <svg
+            class="w-4 h-4 mr-2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+            ></path>
+          </svg>
+          Program Lainya
+        </button>
       </div>
     </section>
 
@@ -444,33 +508,12 @@
 </template>
 
 <script setup>
-// const windowWidth = reactive({
-//   width: 0,
-//   perpage: 1,
-// });
-// const route = useRoute();
+// Inialisasi
+const runtimeConfigs = useRuntimeConfig();
 const perpage = ref(1);
 
-const img = ref([
-  {
-    id: "1",
-    img:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    content: "SLIDE 1",
-  },
-  {
-    id: "2",
-    img:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    content: "SLIDE 2",
-  },
-  {
-    id: "3",
-    img:
-      "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    content: "SLIDE 3",
-  },
-]);
+// Fetch Data Slider
+const { data: img } = await useFetch(() => `${runtimeConfigs.public.API_URL}/sliders`);
 
 const sizeWindow = () => {
   const track = document.getElementById("splide01-track");
