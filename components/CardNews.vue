@@ -9,7 +9,7 @@
         :to="`/berita/` + b.slug"
         class="relative bg-clip-border mx-4 rounded-xl overflow-hidden bg-white text-gray-700 shadow-lg -mt-6 c7"
       >
-        <img :src="b.image" alt="Katie's management lessons" class="c8 d4 f1" />
+        <img :src="b.image" :alt="b.title" class="c8 d4 f1" />
       </nuxt-link>
       <div class="p-6">
         <p
