@@ -68,7 +68,7 @@
 
         <!-- Table Render Data -->
         <!-- <div class="" v-if="pending"><LoadingTable /></div> -->
-        <table  class="w-full text-sm text-left text-gray-500">
+        <table class="w-full text-sm text-left text-gray-500">
           <thead class="border text-xs text-gray-700 uppercase">
             <tr>
               <th scope="col" class="px-6 py-3">No</th>
@@ -166,9 +166,7 @@ function paginate(event) {
 
 // Sort
 function sortir(s) {
-  if (s === field.value) {
-    sort.value = sort.value === "asc" ? "desc" : "asc";
-  }
+  sort.value = sort.value == "asc" ? "desc" : "asc";
   field.value = s;
   refresh();
 }
