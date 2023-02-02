@@ -10,6 +10,22 @@
   @apply font-bold border-orange-600 border-b-0 p-0;
 }
 
+#boderNone {
+  @apply border-orange-600 border-b-0 p-0;
+}
+
+#boderNoneFontSemi {
+  @apply font-semibold border-orange-600 border-b-0 p-0;
+}
+
+#boderNoneFontReg {
+  @apply font-normal border-orange-600 border-b-0 p-0;
+}
+
+#boderNoneButton {
+  @apply font-bold border-b-0 px-5 py-2.5;
+}
+
 .navbar {
   @apply fixed right-0 left-0 z-50 bg-white text-white shadow-md transition-opacity ease-in lg:h-[100px];
 }

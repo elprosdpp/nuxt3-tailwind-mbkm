@@ -7,6 +7,7 @@
     >
       <nuxt-link
         :to="`/berita/` + b.slug"
+        id="boderNone"
         class="relative bg-clip-border mx-4 rounded-xl overflow-hidden bg-white text-gray-700 shadow-lg -mt-6 c7"
       >
         <img :src="b.image" :alt="b.title" class="c8 d4 f1" />
@@ -19,6 +20,7 @@
         </p>
         <nuxt-link
           :to="`/berita/` + b.slug"
+          id="boderNone"
           class="b3 c6 d9 e2 e4 g7 g8 g9:mtr-text-blue-500"
           ><div class="a9">
             <h5
