@@ -17,7 +17,9 @@
         >
           {{ b.newsCategory.name }}
         </p>
-        <a href="#" class="b3 c6 d9 e2 e4 g7 g8 g9:mtr-text-blue-500"
+        <nuxt-link
+          :to="`/berita/` + b.slug"
+          class="b3 c6 d9 e2 e4 g7 g8 g9:mtr-text-blue-500"
           ><div class="a9">
             <h5
               class="block antialiased tracking-normal text-xl font-semibold leading-snug text-inherit g6"
@@ -25,7 +27,7 @@
               {{ b.title.substring(0, 40) + ".." }}
             </h5>
           </div>
-        </a>
+        </nuxt-link>
         <p
           class="block antialiased text-base font-normal leading-relaxed text-gray-700 b5 g5"
         >
