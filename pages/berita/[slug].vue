@@ -82,7 +82,7 @@
     <section
       class="container mx-auto bg-white shadow-md z-10 relative rounded-lg -mt-[5rem] lg:py-14"
     >
-      <div class="grid grid-cols-6 gap-10 px-14">
+      <div class="flex flex-col gap-10 p-10 lg:grid grid-cols-6 lg:px-14">
         <div class="col-span-4">
           <h1 class="text-lg mb-5">
             By <span class="font-bold"> {{ detailNews.data.author.name }}</span> ●
@@ -93,13 +93,15 @@
         </div>
         <div class="col-span-2">
           <div class="lg:sticky lg:top-[7rem]">
-            <h1 class="text-lg font-bold mb-4">LATEST NEWS</h1>
+            <h1 class="text-lg font-bold mb-4 border-l-4 border-blue-600 px-2">
+              LATEST NEWS
+            </h1>
             <div
               class="flex items-center mb-6"
               v-for="(late, index) in lateNews.data"
               :key="index"
             >
-              <nuxt-link
+              <NuxtLink
                 :to="`/berita/` + late.slug"
                 id="boderNoneFontSemi"
                 class="flex-shrink-0"
@@ -109,13 +111,13 @@
                   alt=""
                   class="max-w-full w-24 h-24 block mr-3 object-cover rounded-lg"
                 />
-              </nuxt-link>
-              <nuxt-link :to="`/berita/` + late.slug" id="boderNoneFontReg">
+              </NuxtLink>
+              <NuxtLink :to="`/berita/` + late.slug" id="boderNoneFontReg">
                 <h5 class="font-bold">
                   {{ late.title.substring(0, 40) + ".." }}
                 </h5>
                 <p class="mb-2">{{ late.excerpt.substring(0, 50) + ".." }}</p>
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -130,8 +132,11 @@ const runtimeConfigs = useRuntimeConfig();
 const route = useRoute();
 
 // fetch Data Detail
-const { data: detailNews, pending, refresh } = await useFetch(
-  () => `${runtimeConfigs.public.API_URL}/news/${route.params.id}`
+// const { data: detailNews, pending, refresh } = await useFetch(
+//   () => `${runtimeConfigs.public.API_URL}/news/${route.params.id}`
+// );
+const { data: detailNews } = await useFetch(
+  `${runtimeConfigs.public.API_URL}/news/${route.params.slug}`
 );
 
 // fetch Data Late
@@ -139,11 +144,13 @@ const { data: lateNews } = await useFetch(
   () => `${runtimeConfigs.public.API_URL}/news?paginate=4`
 );
 
+// Date Format
 const formatDate = (date) => {
   const options = { year: "numeric", month: "long", day: "numeric" };
   return new Date(date).toLocaleDateString("en-GB", options);
 };
 
+// Image Style Background
 const imageDetail = (image) => {
   return `background-image: url('${image}')`;
 };

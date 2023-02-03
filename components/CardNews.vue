@@ -5,20 +5,20 @@
       :key="index"
       class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md mb-8"
     >
-      <nuxt-link
+      <NuxtLink
         :to="`/berita/` + b.slug"
         id="boderNone"
         class="relative bg-clip-border mx-4 rounded-xl overflow-hidden bg-white text-gray-700 shadow-lg -mt-6 c7"
       >
         <img :src="b.image" :alt="b.title" class="c8 d4 f1" />
-      </nuxt-link>
+      </NuxtLink>
       <div class="p-6">
         <p
           class="block antialiased text-sm font-normal leading-normal text-blue-500 b3 g4"
         >
           {{ b.newsCategory.name }}
         </p>
-        <nuxt-link
+        <NuxtLink
           :to="`/berita/` + b.slug"
           id="boderNone"
           class="b3 c6 d9 e2 e4 g7 g8 g9:mtr-text-blue-500"
@@ -29,7 +29,7 @@
               {{ b.title.substring(0, 40) + ".." }}
             </h5>
           </div>
-        </nuxt-link>
+        </NuxtLink>
         <p
           class="block antialiased text-base font-normal leading-relaxed text-gray-700 b5 g5"
         >
